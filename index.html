@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Манги</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#popular">Популярное</a></li>
+            <li><a href="#categories">Категории</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+        </ul>
+    </nav>
+
+    <section class="manga-world" id="home">
+        <div class="manga-world-content">
+            <h1>Мир манги</h1>
+            <p>Ма́нга (漫画, マンガ,)— японские комиксы, иногда называемые комикку (コミック). Манга в форме, в которой она существует в настоящее время, начала развиваться после окончания Второй мировой войны, 
+                испытав сильное влияние западных традиций. Однако манга имеет глубокие корни в раннем японском искусстве. <br>
+                Погрузитесь в удивительные истории!</p>
+            <a href="#popular" class="dive-btn" onclick="scrollToPopular()">Погрузиться</a>
+        </div>
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="src/Gojo VS Sukuna Animation - @NotL86 ⅼ Voice Over - ShadeRonin (Chapters 234 235).mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="popular" id="popular">
+        <h2>Популярные манги</h2>
+        <div class="manga-grid">
+            <div class="manga-card">
+                <img src="src/1.jpg" alt="Токийский гуль">
+                <h3>Токийский гуль</h3>
+                <a href="manga-details-tg.html" class="details-btn">Подробнее</a>
+            </div>
+            <div class="manga-card">
+                <img src="src/2.jpg" alt="Код Гиасс">
+                <h3>Код Гиасс</h3>
+                <a href="manga-details-cg.html" class="details-btn">Подробнее</a>
+            </div>
+            <div class="manga-card">
+                <img src="src/3.jpg" alt="Баскетбол Куроко">
+                <h3>Баскетбол Куроко</h3>
+                <a href="manga-details-kuroko.html" class="details-btn">Подробнее</a>
+            </div>
+            <div class="manga-card">
+                <img src="src/4.jpg" alt="Хадзимэ но Иппо">
+                <h3>Первый Шаг</h3>
+                <a href="manga-details-hajime.html" class="details-btn">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <h2>Категории</h2>
+        <div class="category-grid">
+            <a href="category.html?genre=shonen" class="category-card">Сёнэн</a>
+            <a href="category.html?genre=fantasy" class="category-card">Фэнтези</a>
+            <a href="category.html?genre=adventure" class="category-card">Приключения</a>
+        </div>
+    </section>
+
+    <section class="subscribe" id="subscribe">
+        <h2>Подпишитесь на обновления</h2>
+        <input type="email" placeholder="Введите ваш email" required>
+        <button>Подписаться</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Манга. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
